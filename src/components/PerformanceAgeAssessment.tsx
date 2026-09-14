@@ -13,6 +13,7 @@ import {
   X
 } from 'lucide-react';
 import { AssessmentResult } from '../types';
+import { ScrollReveal } from './ScrollReveal';
 
 interface PerformanceAgeAssessmentProps {
   isModal?: boolean;
@@ -103,7 +104,8 @@ export const PerformanceAgeAssessment: React.FC<PerformanceAgeAssessmentProps> =
           : 'py-20 bg-prime-900/90 relative border-t border-b border-white/5'
       }`}
     >
-      <div className="max-w-4xl w-full mx-auto bg-prime-950 border border-gold-500/40 rounded-sm shadow-2xl p-6 sm:p-10 relative">
+      <ScrollReveal direction="up" className="max-w-4xl w-full mx-auto">
+        <div className="w-full bg-prime-950 border border-gold-500/40 rounded-sm shadow-2xl p-6 sm:p-10 relative">
         
         {/* Modal Close button */}
         {isModal && onClose && (
