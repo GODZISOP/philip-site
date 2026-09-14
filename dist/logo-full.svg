@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 70" fill="none">
+  <defs>
+    <linearGradient id="primeGoldFull" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#A57F32" />
+      <stop offset="50%" stop-color="#C5A059" />
+      <stop offset="100%" stop-color="#EBD28B" />
+    </linearGradient>
+  </defs>
+
+  <!-- Logo Mark -->
+  <g transform="translate(6, 4) scale(0.68)">
+    <rect x="18" y="16" width="13" height="68" rx="2" fill="#F4F5F7" />
+    <path d="M 31 16 L 62 16 C 76 16 85 24 85 36 C 85 47 77 54 64 55 L 78 84 L 62 84 L 49 56 L 31 56 Z" fill="url(#primeGoldFull)" />
+    <path d="M 31 28 L 59 28 C 68 28 72 32 72 36 C 72 41 68 44 59 44 L 31 44 Z" fill="#0B0D10" />
+    <polygon points="76,16 88,16 82,24" fill="#C5A059" />
+  </g>
+
+  <!-- Typography: PRIMELATERFIT -->
+  <text x="82" y="47" font-family="'Outfit', 'Plus Jakarta Sans', system-ui, sans-serif" font-size="31" font-weight="800" letter-spacing="0.14em" fill="#F4F5F7">
+    PRIME<tspan fill="#C5A059">LATER</tspan>FIT
+  </text>
+  
+  <!-- Trademark indicator -->
+  <text x="444" y="30" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="11" font-weight="700" letter-spacing="0.05em" fill="#C5A059">
+    TM
+  </text>
+</svg>
