@@ -189,4 +189,17 @@ export const Prime12Section: React.FC<Prime12Props> = ({ onApply }) => {
             <div className="p-5 rounded-sm bg-prime-950 border border-white/5 space-y-2">
               <div className="text-2xl sm:text-3xl font-black font-display text-gold-400">6 Dim</div>
               <div className="text-xs font-bold uppercase text-white tracking-wider">Metric Matrix</div>
-              <
+              <div className="text-[11px] text-prime-400 font-mono">Performance &gt; Scale</div>
+            </div>
+            <div className="p-5 rounded-sm bg-prime-950 border border-white/5 space-y-2">
+              <div className="text-2xl sm:text-3xl font-black font-display text-gold-400">Zero</div>
+              <div className="text-xs font-bold uppercase text-white tracking-wider">Gimmicks</div>
+              <div className="text-[11px] text-prime-400 font-mono">Evidence-led longevity</div>
+            </div>
+          </div>
+        </ScrollReveal>
+
+      </div>
+    </section>
+  );
+};

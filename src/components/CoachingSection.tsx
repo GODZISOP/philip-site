@@ -1,5 +1,6 @@
 import React from 'react';
-import { Cpu, UserCheck, Check, ArrowRight } from 'lucide-react';
+import { Cpu, UserCheck, Check } from 'lucide-react';
+import { ScrollReveal } from './ScrollReveal';
 
 export const CoachingSection: React.FC = () => {
   const techPoints = [
@@ -23,101 +24,107 @@ export const CoachingSection: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="max-w-3xl space-y-3">
-          <div className="inline-block text-xs font-mono tracking-widest text-gold-400 uppercase">
-            THE COACHING PHILOSOPHY
+        <ScrollReveal direction="up">
+          <div className="max-w-3xl space-y-3">
+            <div className="inline-block text-xs font-mono tracking-widest text-gold-400 uppercase">
+              THE COACHING PHILOSOPHY
+            </div>
+            <h2 className="text-3xl sm:text-5xl font-display font-black text-white tracking-tight uppercase leading-tight">
+              TECHNOLOGY DELIVERS THE PLAN. <br />
+              <span className="gold-gradient-text">YOUR COACH MAKES THE DECISIONS.</span>
+            </h2>
+            <p className="text-prime-300 text-base sm:text-lg leading-relaxed">
+              Apps don't build champions, and spreadsheets don't hold you accountable. PrimeLaterFit unites frictionless software with seasoned human executive mentorship.
+            </p>
           </div>
-          <h2 className="text-3xl sm:text-5xl font-display font-black text-white tracking-tight uppercase leading-tight">
-            TECHNOLOGY DELIVERS THE PLAN. <br />
-            <span className="gold-gradient-text">YOUR COACH MAKES THE DECISIONS.</span>
-          </h2>
-          <p className="text-prime-300 text-base sm:text-lg leading-relaxed">
-            Apps don't build champions, and spreadsheets don't hold you accountable. PrimeLaterFit unites frictionless software with seasoned human executive mentorship.
-          </p>
-        </div>
+        </ScrollReveal>
 
         {/* Dual Architecture Comparison */}
         <div className="mt-14 grid grid-cols-1 lg:grid-cols-2 gap-8">
           
           {/* Left Column: The Technology */}
-          <div className="p-8 rounded-sm bg-prime-950 border border-white/8 space-y-6">
-            <div className="flex items-center gap-3.5 pb-4 border-b border-white/5">
-              <div className="p-3 rounded-sm bg-prime-850 text-prime-300 border border-white/5">
-                <Cpu className="w-6 h-6 text-prime-300" />
-              </div>
-              <div>
-                <span className="text-xs font-mono text-prime-400 uppercase tracking-widest block">
-                  The Platform
-                </span>
-                <h3 className="text-xl font-display font-bold text-white uppercase tracking-wider">
-                  What Technology Provides
-                </h3>
-              </div>
-            </div>
-
-            <div className="space-y-4">
-              {techPoints.map((item, idx) => (
-                <div key={idx} className="flex items-start gap-3">
-                  <div className="w-5 h-5 rounded-full bg-prime-800 flex items-center justify-center shrink-0 mt-0.5">
-                    <Check className="w-3 h-3 text-prime-300" />
-                  </div>
-                  <div>
-                    <span className="text-xs sm:text-sm font-bold text-white block">
-                      {item.title}
-                    </span>
-                    <span className="text-xs text-prime-400 leading-relaxed block mt-0.5">
-                      {item.desc}
-                    </span>
-                  </div>
+          <ScrollReveal direction="right" delay={150} className="h-full">
+            <div className="p-8 rounded-sm bg-prime-950 border border-white/8 space-y-6 h-full">
+              <div className="flex items-center gap-3.5 pb-4 border-b border-white/5">
+                <div className="p-3 rounded-sm bg-prime-850 text-prime-300 border border-white/5">
+                  <Cpu className="w-6 h-6 text-prime-300" />
                 </div>
-              ))}
-            </div>
+                <div>
+                  <span className="text-xs font-mono text-prime-400 uppercase tracking-widest block">
+                    The Platform
+                  </span>
+                  <h3 className="text-xl font-display font-bold text-white uppercase tracking-wider">
+                    What Technology Provides
+                  </h3>
+                </div>
+              </div>
 
-            <div className="pt-4 border-t border-white/5 text-xs font-mono text-prime-400">
-              ROLE: Zero-friction friction-free infrastructure and data collection.
+              <div className="space-y-4">
+                {techPoints.map((item, idx) => (
+                  <div key={idx} className="flex items-start gap-3">
+                    <div className="w-5 h-5 rounded-full bg-prime-800 flex items-center justify-center shrink-0 mt-0.5">
+                      <Check className="w-3 h-3 text-prime-300" />
+                    </div>
+                    <div>
+                      <span className="text-xs sm:text-sm font-bold text-white block">
+                        {item.title}
+                      </span>
+                      <span className="text-xs text-prime-400 leading-relaxed block mt-0.5">
+                        {item.desc}
+                      </span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              <div className="pt-4 border-t border-white/5 text-xs font-mono text-prime-400">
+                ROLE: Friction-free infrastructure and data collection.
+              </div>
             </div>
-          </div>
+          </ScrollReveal>
 
           {/* Right Column: The Human Coach */}
-          <div className="p-8 rounded-sm bg-prime-950 border border-gold-500/40 shadow-xl shadow-gold-500/5 space-y-6 relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-32 h-32 bg-gold-500/5 rounded-full blur-2xl pointer-events-none" />
+          <ScrollReveal direction="left" delay={250} className="h-full">
+            <div className="p-8 rounded-sm bg-prime-950 border border-gold-500/40 shadow-xl shadow-gold-500/5 space-y-6 relative overflow-hidden h-full">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-gold-500/5 rounded-full blur-2xl pointer-events-none" />
 
-            <div className="flex items-center gap-3.5 pb-4 border-b border-white/5">
-              <div className="p-3 rounded-sm bg-gold-500 text-prime-950 font-bold">
-                <UserCheck className="w-6 h-6 text-prime-950" />
-              </div>
-              <div>
-                <span className="text-xs font-mono text-gold-400 uppercase tracking-widest block font-bold">
-                  The Master Key
-                </span>
-                <h3 className="text-xl font-display font-bold text-white uppercase tracking-wider">
-                  What Your Coach Provides
-                </h3>
-              </div>
-            </div>
-
-            <div className="space-y-4">
-              {coachPoints.map((item, idx) => (
-                <div key={idx} className="flex items-start gap-3">
-                  <div className="w-5 h-5 rounded-full bg-gold-500/20 flex items-center justify-center shrink-0 mt-0.5">
-                    <Check className="w-3 h-3 text-gold-400" />
-                  </div>
-                  <div>
-                    <span className="text-xs sm:text-sm font-bold text-white block">
-                      {item.title}
-                    </span>
-                    <span className="text-xs text-prime-300 leading-relaxed block mt-0.5">
-                      {item.desc}
-                    </span>
-                  </div>
+              <div className="flex items-center gap-3.5 pb-4 border-b border-white/5">
+                <div className="p-3 rounded-sm bg-gold-500 text-prime-950 font-bold">
+                  <UserCheck className="w-6 h-6 text-prime-950" />
                 </div>
-              ))}
-            </div>
+                <div>
+                  <span className="text-xs font-mono text-gold-400 uppercase tracking-widest block font-bold">
+                    The Master Key
+                  </span>
+                  <h3 className="text-xl font-display font-bold text-white uppercase tracking-wider">
+                    What Your Coach Provides
+                  </h3>
+                </div>
+              </div>
 
-            <div className="pt-4 border-t border-white/5 text-xs font-mono text-gold-400 font-semibold">
-              ROLE: Critical strategic judgment, psychological mastery, and accountability.
+              <div className="space-y-4">
+                {coachPoints.map((item, idx) => (
+                  <div key={idx} className="flex items-start gap-3">
+                    <div className="w-5 h-5 rounded-full bg-gold-500/20 flex items-center justify-center shrink-0 mt-0.5">
+                      <Check className="w-3 h-3 text-gold-400" />
+                    </div>
+                    <div>
+                      <span className="text-xs sm:text-sm font-bold text-white block">
+                        {item.title}
+                      </span>
+                      <span className="text-xs text-prime-300 leading-relaxed block mt-0.5">
+                        {item.desc}
+                      </span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              <div className="pt-4 border-t border-white/5 text-xs font-mono text-gold-400 font-semibold">
+                ROLE: Critical strategic judgment, psychological mastery, and accountability.
+              </div>
             </div>
-          </div>
+          </ScrollReveal>
 
         </div>
 
