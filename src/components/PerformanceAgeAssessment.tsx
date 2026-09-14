@@ -568,8 +568,8 @@ export const PerformanceAgeAssessment: React.FC<PerformanceAgeAssessmentProps> =
 
           </div>
         )}
-
-      </div>
+        </div>
+      </ScrollReveal>
     </div>
   );
 };
